@@ -4,7 +4,7 @@
   "description": "![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss -i src/style.css -o public/style.css -w"
+    "build-css": "tailwindcss -i src/tailwind.css -o public/tailwind.css -w"
   },
   "repository": {
     "type": "git",

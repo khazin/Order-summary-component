@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="public/tailwind.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <div class="container flex justify-center items-center bg-paleBlue">
+      <main class="card bg-white shadow-2xl">
+        <div class="header"></div>
+        <section class="content font-redhatSans ">
+          <div class="cta text-center">
+            <div class="title text-darkBlue font-lg">Order Summary</div>
+            <div class="paragraph text-desaturatedBlue font-sm">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </div>
+          </div>
+          <div class="plan bg-veryPaleBblue rounded-2xl grid grid-cols-4">
+            <div class="icon__music  col-start-1 row-start-1 row-end-3 justify-self-center self-center"></div>
+            <div class="title col-start-2 col-end-4 row-start-1  row-end-2 justify-self-start self-end font-lg text-darkBlue">Annual Plan</div>
+            <div class="paragraph col-start-2 col-end-4 row-start-2 row-end-3 justify-self-start self-start font-md text-desaturatedBlue">$59.99/year</div>
+            <a href="#" class="btn__change col-start-4 row-start-1 row-end-3 justify-self-start self-center font-lg text-brightBlue underline">Change</a>
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div class="btn__wrapper flex flex-col justify-center items-center">
+            <button class="payment rounded-2xl shadow-xl bg-brightBlue active:bg-desaturatedBlue text-paleBlue font-lg" >Proceed to Payment</button>
+            <button class="cancel self-center text-desaturatedBlue font-lg">Cancel Order</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>

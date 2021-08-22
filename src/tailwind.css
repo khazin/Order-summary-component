@@ -1,5 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container__card {
+  @apply flex justify-center items-center;
+}
+
+.plan {
+  @apply grid grid-cols-4;
+}
+
+.icon__music {
+  @apply col-start-1 row-start-1 row-end-3 justify-self-center self-center;
+}
+.plan .title {
+  @apply col-start-2 col-end-4 row-start-1  row-end-2 justify-self-start self-end;
+}
+.plan .paragraph {
+  @apply col-start-2 col-end-4 row-start-2 row-end-3 justify-self-start self-start;
+}
+.btn__change {
+  @apply col-start-4 row-start-1 row-end-3 justify-self-start self-center;
+}
+
+.btn__wrapper {
+  @apply flex flex-col justify-center items-center;
+}
+

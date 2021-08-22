@@ -22,7 +22,7 @@ module.exports = {
         darkBlue: 'hsl(223, 47%, 23%)'
       },
       screens: {
-        tablet: '768px',
+        tablet: '786px',
         desktop: '1366px'
       }
     },

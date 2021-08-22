@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -16,7 +15,7 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <div class="container flex justify-center items-center bg-paleBlue">
+    <div class="container__card bg-paleBlue">
       <main class="card bg-white shadow-2xl">
         <div class="header"></div>
         <section class="content font-redhatSans ">
@@ -27,16 +26,16 @@
               on any device anywhere you like!
             </div>
           </div>
-          <div class="plan bg-veryPaleBblue rounded-2xl grid grid-cols-4">
-            <div class="icon__music  col-start-1 row-start-1 row-end-3 justify-self-center self-center"></div>
-            <div class="title col-start-2 col-end-4 row-start-1  row-end-2 justify-self-start self-end font-lg text-darkBlue">Annual Plan</div>
-            <div class="paragraph col-start-2 col-end-4 row-start-2 row-end-3 justify-self-start self-start font-md text-desaturatedBlue">$59.99/year</div>
-            <a href="#" class="btn__change col-start-4 row-start-1 row-end-3 justify-self-start self-center font-lg text-brightBlue underline">Change</a>
+          <div class="plan bg-veryPaleBblue rounded-2xl ">
+            <div class="icon__music "></div>
+            <div class="title  font-lg text-darkBlue">Annual Plan</div>
+            <div class="paragraph  font-md text-desaturatedBlue">$59.99/year</div>
+            <a href="#" class="btn__change font-lg text-brightBlue underline">Change</a>
           </div>
 
-          <div class="btn__wrapper flex flex-col justify-center items-center">
+          <div class="btn__wrapper ">
             <button class="payment rounded-2xl shadow-xl bg-brightBlue active:bg-desaturatedBlue text-paleBlue font-lg" >Proceed to Payment</button>
-            <button class="cancel self-center text-desaturatedBlue font-lg">Cancel Order</button>
+            <button class="cancel text-desaturatedBlue font-lg">Cancel Order</button>
           </div>
         </section>
       </main>

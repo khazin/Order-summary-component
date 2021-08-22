@@ -10,6 +10,9 @@ GLOBAL STYLE
   font-size: 62.5%;
 }
 
+body {
+  position: relative;
+}
 /************
 MOBILE LAYOUT
 *************/
@@ -168,4 +171,24 @@ DESKTOP LAYOUT
     margin-top: 3rem;
     font-size: 1.5rem;
   }
+}
+
+
+/****************
+ATTRIBUTION STYLE
+*****************/
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
